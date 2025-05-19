@@ -1017,7 +1017,16 @@ main {
 			left: 0;
 			right: 0;
 			bottom: 0px;
+			overflow-x: hidden;
 		}
+			picture.slider-deco > img {
+				position: relative;
+				left: -1%;
+				width: 102%;
+				height: auto;
+				object-fit: cover;
+				object-position: center;
+			}
 		
 	
 	
@@ -1094,9 +1103,12 @@ main {
 
 	/*:::: Intro styles ::::*/
 	#intro > .boxWrap > .capsula {
+		display: flex;
 		flex-direction: row;
 		padding: 4vh 0px;
 		grid-gap: 8vh;
+		justify-content: flex-start;
+		align-items: flex-start;
 	}
 	#intro > .boxWrap > .capsula > div:first-child {
 		flex: 1 1 33%;
@@ -1517,10 +1529,33 @@ button{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
-	Media Queries
+	dispositivos de cualquier orientacion pero menores a 866px en general
 ========================================================================== */
-@media only screen and (max-width: 866px) {
+@media screen and (max-width: 866px) {
+	#navs {
+		justify-content: flex-end;
+	}
+}
+
+
+
+/* ==========================================================================
+	dispositivos de pie menores a 866px
+========================================================================== */
+@media screen and (orientation:portrait) and (max-width: 866px) {
 	/*::: General :::*/
 	:root{
 		--margenGlobal: 8vw;
@@ -1528,9 +1563,6 @@ button{
 	#logotipo > a {
 		width: 70px;
 		padding: 12px 18px;
-	}
-	#navs {
-		justify-content: flex-end;
 	}
 	#redesG {
 		display: flex;
@@ -1587,29 +1619,60 @@ button{
 	
 }
 
+/* ==========================================================================
+	dispositivos acostados menores a 866px en general
+========================================================================== */
+@media screen and (orientation:landscape) and (max-width: 866px) {
+
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+/*Medidas globales descartando orientacion, ideal para elementos largos como menus*/
 @media only screen and (max-width: 865px){
-	.onlyDesktop{
+	.onlyDesktopG{
 		display: none !important;
 		visibility: hidden !important;
-		width: 0px !important;
-		height: 0px !important;
 		overflow: hidden !important;
 	}
 }
 @media only screen and (min-width: 866px){
-	.onlyMobile{
+	.onlyMobileG{
 		display: none !important;
 		visibility: hidden !important;
-		width: 0px !important;
-		height: 0px !important;
 		overflow: hidden !important;
 	}
 }
+@media only screen and (min-width: 300px){
+	.onlyMobile{
+		display: none !important;
+		visibility: hidden !important;
+		overflow: hidden !important;
+	}
+}
+@media only screen and (max-width: 865px) and (orientation:portrait){
+	.onlyDesktop{
+		display: none !important;
+		visibility: hidden !important;
+		overflow: hidden !important;
+	}
+	.onlyMobile{
+		display: inherit !important;
+		visibility: visible !important;
+		overflow: inherit !important;
+	}
+}
+
 
 
 

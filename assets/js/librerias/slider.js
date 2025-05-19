@@ -169,8 +169,8 @@ define([], function () {
   };
 
   Slider.prototype.resetAuto = function () {
-    //clearTimeout(this.timer);
-    //this.startAuto();
+    clearTimeout(this.timer);
+    this.startAuto();
   };
 
   /* =======================================================================
