@@ -467,7 +467,7 @@ main {
 		color: var(--colorTexto2);
 	}
 	.bold{
-		font-weight: 900;
+		font-weight: 700;
 	}
 	.semibold{
 		font-weight: 500;
