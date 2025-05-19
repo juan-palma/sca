@@ -3,7 +3,7 @@
 	<head itemscope itemtype="https://schema.org/Person" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# profile: https://ogp.me/ns/profile#">
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!--<meta name="apple-mobile-web-app-capable" content="yes">-->
 		<meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0" />
 
 		
@@ -126,8 +126,133 @@
 		<!-- End Google Tag Manager (noscript) -->
 
 
-		<div></div>
-		
+
+		<div id="loadingBox"><img src="./assets/img/ajax.webp" alt="circulo de carga" width="40" height="40"></div>
+		<nav>
+			<div class="boxWrap">
+				<div class="capsula">
+					<div id="logotipo">
+						<a href="./" target="_parent" title="Ir al Home">
+							<figure>
+								<picture>
+									<source srcset="./assets/img/logo.svg">
+									<img src="./assets/img/logo.svg" alt="SCA Logotipo" width="120" height="120">
+								</picture>
+							</figure>
+						</a>
+					</div>
+					<div id="navs">
+						<ul id="menuBox" class="onlyDesktop">
+							<li class="activoOFF"><a href="./" title="Ir al Home" class="prevenir">Inicio</a></li>
+							<li><a href="#servicios" class="scrollingTo prevenir">Servicios</a></li>
+							<li><a href="#nosotros" class="scrollingTo prevenir">Nosotros</a></li>
+							<li><a href="#sectores" class="scrollingTo prevenir">Sectores</a></li>
+							<li><a href="#contacto" class="scrollingTo prevenir">Contacto</a></li>
+						</ul>
+						<div id="menuBoxMobile" class="onlyMobile">
+							<ul id="menuMobileBox">
+								<!-- <li id="redesG" class="">
+									<div class="redesMain">
+										<a href="https://wa.me/+5213326248404" target="_blank" rel="nofollow" title="Iniciar charla por WhatsApp">
+											<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1b">
+												<div class="hi-icon hi-icon-mobile">
+													<i class="fa-brands fa-whatsapp"></i>
+												</div>
+											</div>
+										</a>
+									</div>
+								</li> -->
+
+								<li class=""><a href="./" class="prevenir">Inicio</a></li>
+								<li><a href="#servicios" class="scrollingTo">Servicios</a></li>
+								<li><a href="#nosotros" class="scrollingTo">Nosotros</a></li>
+								<li><a href="#sectores" class="scrollingTo">Sectores</a></li>
+								<li><a href="#contacto" class="scrollingTo">Contacto</a></li>
+							</ul>
+							<div id="menuMobileBtn">
+								<!-- <img id="imgMenuMobile" src="assets/img/mobileBtn.svg" alt=""> -->
+								<div id="imgMenuMobile" class="iconosMobileMenu">
+									<i class="fa-solid fa-bars"></i>
+								</div>
+								<div id="imgClose" class="iconosMobileMenu">
+									<i class="fa-solid fa-xmark"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<div id="redesG" class="onlyDesktop">
+						<div class="redesMain">
+							<a href="https://wa.me/+5213326248404" target="_blank" rel="nofollow" title="Iniciar charla por WhatsApp">
+								<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1b">
+									<div class="hi-icon hi-icon-mobile">
+										<i class="fa-brands fa-whatsapp"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</nav>
+
+		<main>
+
+        <div class="contenido">
+
+			<article class="boxSeccion" id="slider">
+				<div class="anchoFullFlex">
+					<div class="sliderG" id="heroSlider">
+					<!-- El JS inyectará aquí los <div class="slide"> … </div> -->
+
+					<!--Corte inverior para los slides-->
+					<picture class="slider-deco" aria-hidden="true">
+						<!-- Mobile first -->
+						<source srcset="./sliders/corte_slider_mobile.svg" media="(max-width: 767px)">
+						<!-- Desktop -->
+						<img src="./sliders/corte_slider_desktop.svg" alt="">
+					</picture>
+
+					<!-- Controles laterales -->
+					<button class="nav nav--prev" aria-label="Anterior"><img src="./sliders/flecha_back.svg" alt="back"></button>
+					<button class="nav nav--next" aria-label="Siguiente"><img src="./sliders/flecha_next.svg" alt="next"></button>
+
+					<!-- Bullets inferiores (se llenan por JS) -->
+					<ul class="dots" id="heroDots"></ul>
+					</div>
+				</div>
+			</article>
+
+			<article class="boxSeccion" id="intro">
+				<div class="boxWrap">
+					<div class="capsula">
+						<div>
+							<figure class="onlyDesktop">
+								<picture class="idaAniFade" data-direccion="abajo" style="translate: none; rotate: none; scale: none; opacity: 0; visibility: hidden; transform: translate(0px, 68px);">
+									<!--<source media="(min-width: 460px)" preload-srcset="./assets/img/cajafuerte.webp">
+									<source preload-srcset="./assets/img/cajafuerte-400.webp">-->
+									<img preload-src="./assets/img/arbusto.webp" alt="Arbusto"  width="120" height="120">
+								</picture>
+							</figure>
+						</div>
+						<div>
+							<h1>En SCA somos especialistas en gestión ambiental empresarial</h1>
+							<figure class="onlyMobile">
+								<picture class="idaAniFade" data-direccion="abajo" style="translate: none; rotate: none; scale: none; opacity: 0; visibility: hidden; transform: translate(0px, 68px);">
+									<!--<source media="(min-width: 460px)" preload-srcset="./assets/img/cajafuerte.webp">
+									<source preload-srcset="./assets/img/cajafuerte-400.webp">-->
+									<img preload-src="./assets/img/arbusto.webp" alt="Arbusto"  width="120" height="120">
+								</picture>
+							</figure>
+							<p>
+								Nuestra prioridad es que <span class="semibold">cumplas con todas tus obligaciones ambientales sin complicaciones</span>, con impacto positivo y soluciones a la medida. Nos involucramos de forma cercana, así que considéranos parte de tu equipo.
+							</p>
+							<div class="globo globoAzul">
+								Solicita una Auditoria de <br />Cumplimiento Legal SIN COSTO
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
 
 			<!--<article class="boxSeccion" id="caminoCorrecto">
 				<div class="boxWrap">

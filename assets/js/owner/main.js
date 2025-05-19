@@ -731,8 +731,8 @@ Funcion donde se controla el sitio serb general con  otros eventos de carga o de
 */
 function controlador(){
 	// Registrar plugins de GSAP
-	//gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Flip);
-	//iniciador();
+	gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Flip);
+	iniciador();
 };
 const retrasoPrecargaImg = 1600;
 
