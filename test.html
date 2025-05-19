@@ -125,6 +125,16 @@
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
 		<!-- End Google Tag Manager (noscript) -->
 
+		<script type="text/javascript">
+			window.addEventListener('resize', () => {
+				console.log(
+					'screen.width =', screen.width,
+					'innerWidth =', window.innerWidth,
+					'clientWidth =', document.documentElement.clientWidth
+				);
+			});
+		</script>
+
 
 		<div id="test"></div>
 
