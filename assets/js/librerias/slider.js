@@ -164,8 +164,8 @@ define([], function () {
      Auto-play
   ======================================================================= */
   Slider.prototype.startAuto = function () {
-    //const delay = this.data[this.current].delay ?? this.defaultDelay;
-    //this.timer  = setTimeout(() => this.next(), delay);
+    const delay = this.data[this.current].delay ?? this.defaultDelay;
+    this.timer  = setTimeout(() => this.next(), delay);
   };
 
   Slider.prototype.resetAuto = function () {
