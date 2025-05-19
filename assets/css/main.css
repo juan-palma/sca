@@ -1023,7 +1023,7 @@ main {
 			top: auto;
 			left: 0;
 			right: 0;
-			bottom: 0px;
+			bottom: -2px;
 			overflow-x: hidden;
 		}
 			picture.slider-deco > img {
@@ -1045,7 +1045,9 @@ main {
 		transform: translateY(10vh);
 	}
 		article.slide.slideSCA .textoPSlide {
-			font-size: clamp(12px, .6vh + .6rem, 32px);
+			font-size: clamp(12px, .8vh + .8rem, 32px);
+			font-family: 'Avenir Next Cyr';
+			font-weight: 500;
 		}
 
 	article.slide.gasolineraText .textoPSlide{
