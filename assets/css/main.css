@@ -715,9 +715,6 @@ main {
 					.iconosMobileMenu > svg{
 						color: var(--colorPrincipal);
 					}
-				#menuMobileBox .hi-icon-effect-1 .hi-icon {
-					
-				}
 					#menuMobileBox li > ul {
 						display: flex;
 						flex-direction: column;
@@ -792,10 +789,10 @@ main {
 		color: var(--colorSecundario);
 	}
 	.colorT{
-		var(--colorTexto)
+		color: var(--colorTexto);
 	}
 	.colorT2{
-		var(--colorTexto2)
+		color: var(--colorTexto2);
 	}
 	.bold{
 		font-weight: 900;
@@ -1551,6 +1548,13 @@ button{
 	.slide.manoAguaSlide .globo {
 		font-size: 55% !important;
 		width: 74%;
+	}
+
+
+
+	/*:::: home - intro :::*/
+	#intro > .boxWrap > .capsula > div:first-child {
+		display: none;
 	}
 
 	
