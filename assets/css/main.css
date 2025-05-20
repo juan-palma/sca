@@ -1187,7 +1187,7 @@ main {
 				-webkit-mask-size: 200%;
 				mask-position: 0 0;
 				-webkit-mask-position: 0 0;
-				animation: slide-wave 35s linear infinite;
+				animation: slide-wave 34s linear infinite;
 			}
 
 			@keyframes slide-wave {
