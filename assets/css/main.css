@@ -1163,7 +1163,6 @@ main {
 			position: absolute;
 			width: 100vw;
 			min-height: 100%;
-			height: max-content;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -1181,7 +1180,7 @@ main {
 				mask-image: url('../img/mascara_ondas-doble.svg');
 				mask-mode: alpha;
 				mask-repeat: repeat-x;
-				mask-size: 200%;
+				mask-size: 200% 100%;
 				-webkit-mask-image: url('../img/mascara_ondas-doble.svg');
 				-webkit-mask-mode: alpha;
 				-webkit-mask-repeat: repeat-x;
