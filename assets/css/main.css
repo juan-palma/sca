@@ -1184,7 +1184,7 @@ main {
 				-webkit-mask-image: url('../img/mascara_ondas-doble.svg');
 				-webkit-mask-mode: alpha;
 				-webkit-mask-repeat: repeat-x;
-				-webkit-mask-size: 200%;
+				-webkit-mask-size: 200% 100%;
 				mask-position: 0 0;
 				-webkit-mask-position: 0 0;
 				animation: slide-wave 34s linear infinite;
