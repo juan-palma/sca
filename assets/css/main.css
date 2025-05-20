@@ -1180,11 +1180,11 @@ main {
 				mask-image: url('../img/mascara_ondas-doble.svg');
 				mask-mode: alpha;
 				mask-repeat: repeat-x;
-				mask-size: 200% 100%;
+				mask-size: 199% 100%;
 				-webkit-mask-image: url('../img/mascara_ondas-doble.svg');
 				-webkit-mask-mode: alpha;
 				-webkit-mask-repeat: repeat-x;
-				-webkit-mask-size: 200% 100%;
+				-webkit-mask-size: 199% 100%;
 				mask-position: 0 0;
 				-webkit-mask-position: 0 0;
 				animation: slide-wave 34s linear infinite;
@@ -1295,15 +1295,16 @@ main {
 						transform: rotateY(180deg);
 					}
 						#servicios .contentTarjetas > .contentTarjeta .cardCapsul .tarjeta {
-							position: relative;
 							flex: 1 1 100%;
 							display: flex;
 							justify-content: flex-start;
 							align-items: flex-start;
 						}
 							#servicios .contentTarjetas > .contentTarjeta .cardCapsul .frente{
+								width: 100%;
+								height: 100%;
+								position: absolute;
 								transform: translateZ(1px);
-								z-index: 2;
 							}
 								#servicios .contentTarjetas > .contentTarjeta .cardCapsul .frente .figure {
 									position: relative;
@@ -1326,27 +1327,27 @@ main {
 									top: auto;
 									bottom: 6%;
 								}
-						#servicios .contentTarjetas > .contentTarjeta .cardCapsul .vuelta {
-							position: absolute;
-							width: 100%;
-							height: 100%;
-							top: 0px;
-							left: 0px;
-							transform: scale(1.01) rotateY(180deg);
-							background-color: #02334Fee;
-							padding: 8%;
-							color: var(--colorTexto2);
-						}
-							#servicios .contentTarjetas > .contentTarjeta .cardCapsul .vuelta h4 {
-								font-size: 140%;
+							#servicios .contentTarjetas > .contentTarjeta .cardCapsul .vuelta {
+								position: relativa;
+								width: 100%;
+								height: 100%;
+								top: 0px;
+								left: 0px;
+								transform: scale(1.01) rotateY(180deg);
+								background-color: #02334Fee;
+								padding: 8%;
 								color: var(--colorTexto2);
 							}
-							#servicios .contentTarjetas > .contentTarjeta .cardCapsul .vuelta ul {
-								list-style: outside;
-								padding-left: 38px;
-								font-size: 90%;
-								margin-top: 16px;
-							}
+								#servicios .contentTarjetas > .contentTarjeta .cardCapsul .vuelta h4 {
+									font-size: 140%;
+									color: var(--colorTexto2);
+								}
+								#servicios .contentTarjetas > .contentTarjeta .cardCapsul .vuelta ul {
+									list-style: outside;
+									padding-left: 38px;
+									font-size: 90%;
+									margin-top: 16px;
+								}
 
 			/*::: huella :::*/
 			#servicios .capsula.reticula{
@@ -1376,7 +1377,7 @@ main {
 						flex: 1 1 calc(33.3% - 26px * 2);
 					}
 						#servicios .capsula.reticula .boxInfo .dato .numero {
-							font-size: clamp(28px, 3vw + 1rem, 120px);
+							font-size: clamp(42px, 3vw + 1rem, 120px);
 							font-family: 'Montserrat';
 							font-weight: 700;
 							color: var(--colorPrincipal);
@@ -1920,6 +1921,9 @@ button{
 	
 
 	/*::: home - servicios :::*/
+	#servicios .contentTarjetas > .contentTarjeta {
+		aspect-ratio: auto;
+	}
 	#servicios .capsula.reticula {
 		grid-template-areas: "ti ti ti ti ti ti ti ti ti ti ti"
 			"pie pie pie pie pie pie pie pie pie pie pie"
