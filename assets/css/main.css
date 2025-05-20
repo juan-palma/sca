@@ -562,6 +562,35 @@ main {
 
 
 
+	/*Estilos para el buildVideo Global*/
+	/* contenedor responsivo 16:9 */
+    .video-wrapper {
+		position: relative;
+		width: 100%;
+		padding-bottom: 56.25%; /* 16:9 */
+		margin-bottom: 1rem;
+    }
+    .video-wrapper iframe,
+    .video-wrapper video {
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+    }
+	.btn-whatsapp {
+		cursor: pointer;
+
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	.btn-whatsapp:hover{
+		background-color: var(--color3);
+	}
+
+
 
 
 
@@ -747,6 +776,7 @@ main {
 				color: var(--colorTexto2);
 				cursor: pointer;
 				transition: all 200ms ease-in-out;
+				text-shadow: 0px 0px 5px #00000066;
 			}
 			#menuBox > li:hover a,
 			#menuBox > li.activo a,
@@ -901,21 +931,15 @@ main {
 
 
 
-	.contenido {
-		width: 100vw;
-		max-width: 100vw;
-		position: relative;
-		z-index: 3;
-		overflow: hidden;
-		display: flex;
-		flex-direction: column;
-	}
-
-
-
-
-
-
+.contenido {
+	width: 100vw;
+	max-width: 100vw;
+	position: relative;
+	z-index: 3;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
 
 
 /*:::::: Estilos HOME ::::::*/
@@ -1128,6 +1152,284 @@ main {
 		flex-direction: column;
 		grid-gap: 26px;
 	}
+
+
+	/*::: Elegirnos seccion :::*/
+	/*:::: elegirnos ::::*/
+	#elegirnos{
+		position: relative;
+	}
+		#elegirnos > .fondoBox {
+			position: absolute;
+			width: 100vw;
+			min-height: 100%;
+			height: max-content;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow-x: hidden;
+			overflow-y: visible;
+			aspect-ratio: 650 / 303;
+		}
+			#elegirnos > .fondoBox > .fondo {
+				position: absolute;
+				min-width: 100vw;
+				height: 100%;
+				background: url('../img/fondo_agua.webp') center no-repeat;
+				background-size: cover;
+				aspect-ratio: 650 / 303;
+				mask-image: url('../img/mascara_ondas-doble.svg');
+				mask-mode: alpha;
+				mask-repeat: repeat-x;
+				mask-size: 200%;
+				-webkit-mask-image: url('../img/mascara_ondas-doble.svg');
+				-webkit-mask-mode: alpha;
+				-webkit-mask-repeat: repeat-x;
+				-webkit-mask-size: 200%;
+				mask-position: 0 0;
+				-webkit-mask-position: 0 0;
+				animation: slide-wave 35s linear infinite;
+			}
+
+			@keyframes slide-wave {
+				from {
+					mask-position:   0 0;
+					-webkit-mask-position: 0 0;
+				}
+				to {
+					mask-position:   -100% 0;
+					-webkit-mask-position: -100% 0;
+				}
+			}
+				#elegirnos > .fondoBox  > .fondo > figure{
+					visibility: hidden;
+					opacity: 0;
+					pointer-events: none;
+				}
+					#elegirnos > .fondoBox > .fondo > figure > picture > img{
+						width: auto;
+						height: 100%;
+						min-width: 100vw;
+					}
+					
+		#elegirnos > .boxWrap{
+			padding: 0px;
+		}
+			#elegirnos > .boxWrap > .capsula {
+				flex-direction: row;
+				padding: 5vw 0;
+			}
+			@media screen and (orientation:portrait){
+				#elegirnos > .boxWrap > .capsula {
+					padding: 16vh 0;
+				}
+			}
+				#elegirnos > .boxWrap > .capsula .col {
+					flex: 1 1 50%;
+				}
+				#elegirnos > .boxWrap > .capsula .col.col1 {
+					color: #ffffff;
+					padding-right: 7vw;
+					display: flex;
+					flex-direction: column;
+					grid-gap: 4px;
+				}
+					#elegirnos > .boxWrap > .capsula .col.col1 > .titulo {
+						color: var(--colorTexto2);
+					}
+					#elegirnos > .boxWrap > .capsula .col.col1 > p {
+						font-family: 'Nexa-Bold';
+						font-size: clamp(24px, 1vw + 1rem, 80px);
+					}
+				#elegirnos > .boxWrap > .capsula .col.col2 {
+					display: flex;
+					flex-direction: column;
+					grid-gap: 14px;
+				}
+					#elegirnos > .boxWrap > .capsula .col.col2 .globo {
+						width: 100%;
+					}
+
+	/*::: Servicios :::*/
+	#spaceAgua{
+		width: 100%;
+		aspect-ratio: 650 / 101;
+	}
+		#servicios .contentTarjetas {
+			position: relative;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 32px 0px;
+		}
+			#servicios .contentTarjetas > .contentTarjeta {
+				flex: 1 1 50%;
+				aspect-ratio: 8 / 5;
+				display: flex;
+				justify-content: stretch;
+				align-items: stretch;
+				overflow: hidden;
+			}
+				#servicios .contentTarjetas > .contentTarjeta .cardCapsul {
+					position: relative;
+					flex: 1 1 100%;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: stretch;
+					cursor: pointer;
+				}
+					#servicios .contentTarjetas > .contentTarjeta .cardCapsul .cardAni {
+						width: 100%;
+						height: 100%;
+						display: flex;
+						transform-origin: center;
+						transform-style: preserve-3d;
+						-webkit-transform-style: preserve-3d;
+						transition: transform 0.6s ease-in-out;
+						-webkit-transition: transform 0.6s ease-in-out;
+						-webkit-perspective: 1000px;
+						perspective: 1000px;
+					}
+					#servicios .contentTarjetas > .contentTarjeta .cardCapsul:hover .cardAni{
+						transform: rotateY(180deg);
+					}
+						#servicios .contentTarjetas > .contentTarjeta .cardCapsul .tarjeta {
+							position: relative;
+							flex: 1 1 100%;
+							display: flex;
+							justify-content: flex-start;
+							align-items: flex-start;
+						}
+							#servicios .contentTarjetas > .contentTarjeta .cardCapsul .frente{
+								transform: translateZ(1px);
+								z-index: 2;
+							}
+								#servicios .contentTarjetas > .contentTarjeta .cardCapsul .frente .figure {
+									position: relative;
+									width: 100%;
+									height: 100%;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									overflow: hidden;
+								}
+									#servicios .contentTarjetas > .contentTarjeta .cardCapsul .frente .figure img {
+										width: 100%;
+										height: 100%;
+										object-fit: cover;
+										object-position: center;
+									}
+								#servicios .contentTarjetas > .contentTarjeta .cardCapsul .frente .globo {
+									position: absolute;
+									left: 6%;
+									top: auto;
+									bottom: 6%;
+								}
+						#servicios .contentTarjetas > .contentTarjeta .cardCapsul .vuelta {
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							top: 0px;
+							left: 0px;
+							transform: scale(1.01) rotateY(180deg);
+							background-color: #02334Fee;
+							padding: 8%;
+							color: var(--colorTexto2);
+						}
+							#servicios .contentTarjetas > .contentTarjeta .cardCapsul .vuelta h4 {
+								font-size: 140%;
+								color: var(--colorTexto2);
+							}
+							#servicios .contentTarjetas > .contentTarjeta .cardCapsul .vuelta ul {
+								list-style: outside;
+								padding-left: 38px;
+								font-size: 90%;
+								margin-top: 16px;
+							}
+
+			/*::: huella :::*/
+			#servicios .capsula.reticula{
+				display: grid;
+				grid-template-columns: repeat(11, 1fr);
+				grid-auto-rows: minmax(44px, auto);
+				grid-template-areas:
+					"ti ti ti ti ti ti ti pie pie pie pie"
+					"info info info info info info info pie pie pie pie"
+					"info info info info info info info pie pie pie pie";
+				padding-top: 6vh;
+			}
+				#servicios .capsula.reticula .titulo2 {
+					grid-area: ti;
+					font-size: 180%;
+					padding-bottom: 32px;
+				}
+				#servicios .capsula.reticula .boxInfo {
+					grid-area: info;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					align-content: stretch;
+					grid-gap: 26px;
+				}
+					#servicios .capsula.reticula .boxInfo .dato {
+						flex: 1 1 calc(33.3% - 26px * 2);
+					}
+						#servicios .capsula.reticula .boxInfo .dato .numero {
+							font-size: clamp(28px, 3vw + 1rem, 120px);
+							font-family: 'Montserrat';
+							font-weight: 700;
+							color: var(--colorPrincipal);
+						}
+				#servicios .capsula.reticula .pie {
+					grid-area: pie;
+					height: fit-content;
+					padding: 2vw;
+				}
+					#servicios .capsula.reticula .pie picture img {
+						width: 100%;
+						height: 100%;
+						object-fit: contain;
+					}
+
+	/*::: Sectores :::*/
+	article#sectores {
+		background-color: var(--colorPrincipal);
+		color: var(--colorTexto2);
+		padding: 54px 0;
+	}
+		article#sectores .boxWrap {
+			padding: 20px 0;
+		}
+			article#sectores h2, article#sectores h3 {
+				color: var(--colorTexto2);
+			}
+			article#sectores .box {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-content: stretch;
+				grid-gap: 60px;
+				padding-top: 34px;
+			}
+			article#sectores .box .col {
+				flex: 1 1 calc(50% - 28px);
+				max-width: calc(50% - 28px);
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-content: flex-start;
+				grid-gap: 28px;
+			}
+				article#sectores .box .col figure {
+					width: 100%;
+					height: fit-content;
+					aspect-ratio: 8/5;
+				}
+				article#sectores .box .col .titulo2 {
+					font-size: 210%;
+				}
 
 /*::::::: Estilos HOME FIN ::::::*/
 
@@ -1557,6 +1859,17 @@ button{
 	#navs {
 		justify-content: flex-end;
 	}
+
+	/*::: Home servicios :::*/
+	#servicios .contentTarjetas > .contentTarjeta {
+		flex: 1 1 100%;
+	}
+	#servicios .capsula.reticula .boxInfo .dato {
+		flex: 0 1 calc(90% - 26px * 0);
+	}
+	article#sectores .box .col .titulo2 {
+		font-size: 162%;
+	}
 }
 
 
@@ -1594,9 +1907,36 @@ button{
 
 
 	/*:::: home - intro :::*/
-	#intro > .boxWrap > .capsula > div:first-child {
+	#intro > .boxWrap > .capsula:first-child > div:first-child {
 		display: none;
 	}
+
+
+	/*::: elegirnos :::*/
+	#elegirnos > .boxWrap > .capsula {
+		flex-direction: column;
+	}
+		#elegirnos > .boxWrap > .capsula .col.col1 {
+			padding: 0px 0px 27px;
+		}
+	
+
+	/*::: home - servicios :::*/
+	#servicios .capsula.reticula {
+		grid-template-areas: "ti ti ti ti ti ti ti ti ti ti ti"
+			"pie pie pie pie pie pie pie pie pie pie pie"
+			"info info info info info info info info info info info";
+	}
+		#servicios .capsula.reticula .boxInfo .dato {
+			flex: 0 1 calc(100% - 26px * 0);
+		}
+	article#sectores .box {
+		flex-wrap: wrap;
+	}
+		article#sectores .box .col {
+			flex: 1 1 calc(50% - 28px);
+			max-width: 100%;
+		}
 
 	
 
@@ -1621,6 +1961,10 @@ button{
 		footer .capsula .boxG .logo > div {
 			font-size: clamp(1px, (12vw / 1) + 0.1em, 64px);
 		}
+
+
+
+	
 
 
 
