@@ -1727,7 +1727,13 @@ main {
 
 
 
-
+#contacto .hi-icon-effect-1 .hi-icon {
+	background: none;
+}
+#contacto .hi-icon-effect-1b .hi-icon:hover {
+	background: rgba(255,255,255,1);
+	color: var(--colorPrincipal);
+}
 
 
 
@@ -2075,12 +2081,15 @@ button{
 	}
 
 	/*::: Home servicios :::*/
-	#servicios .contentTarjetas > .contentTarjeta {
-		flex: 1 1 100%;
+	#servicios .contentTarjetas {
+		grid-gap: 24px;
 	}
-	#servicios .capsula.reticula .boxInfo .dato {
-		flex: 0 1 calc(90% - 26px * 0);
-	}
+		#servicios .contentTarjetas > .contentTarjeta {
+			flex: 1 1 100%;
+		}
+		#servicios .capsula.reticula .boxInfo .dato {
+			flex: 0 1 calc(90% - 26px * 0);
+		}
 	article#sectores .box .col .titulo2 {
 		font-size: 162%;
 	}
@@ -2177,6 +2186,9 @@ button{
 	/*::: Testimonios :::*/
 	#testContent .sliderG .textoPSlide {
 		padding: 0;
+	}
+	#testContent .sliderG .testUser > p {
+		text-align: left;
 	}
 
 	/*:::: contacto :::*/
