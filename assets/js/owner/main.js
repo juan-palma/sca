@@ -368,8 +368,8 @@ dbDudas.push({pregunta:"¿Vienen, voy, nos vemos debajo del reloj, o cómo está
 
 //:::: DB sliders ::::
 const slidesData = [
-	{img: './sliders/slide1.webp', title: '', text: '<div class="textoPSlide">Estamos contigo desde el inicio <br />y durante todo el proceso</div>', "id":"", "class":"slideSCA", delay:10000},
 	{img: './sliders/slide2.webp', title: '',  text: '<div class="textoPSlide"><span class="blanco">¿NO SABES<br>POR DÓNDE<br>COMENZAR?</span><br><span class="colorP">Comienza</span><br><span class="blanco"><span class="menos">CON</span><br>NOSOTROS</span></div>', "id":"", "class":"gasolineraText"},
+	{img: './sliders/slide1.webp', title: '', text: '<div class="textoPSlide">Estamos contigo desde el inicio <br />y durante todo el proceso</div>', "id":"", "class":"slideSCA", delay:10000},
 	{img: './sliders/slide3.webp', title: '',  text: '<div class="textoPSlide"><span class="azul">Cumplir es</span><br><span class="blanco">muy fácil</span><br><span class="azul">con el equipo</span><br><span class="blanco">correcto</span><div class="globo globoAzul btn-whatsapp" data-url="https://wa.me/+5215548400059"">Solicita una Auditoria de Cumplimiento Legal <span class="bold">SIN COSTO</span></div></div>', "id":"", "class":"manoAguaSlide"}
 ];
 

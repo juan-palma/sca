@@ -1833,6 +1833,7 @@ button{
 	background-color: #000;
     z-index: 9998;
 	margin-top: -4px;
+	font-size: 76%;
 }
 	.powered-by .capsula {
 		justify-content: center;
