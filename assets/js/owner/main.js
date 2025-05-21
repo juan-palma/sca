@@ -342,7 +342,7 @@ async function iniciar() {
 function openMailer(event) {
 	event.preventDefault();
 
-	var url = encodeURIComponent(destinatario = atob("aG9sYUB2ZW50b21hcXVpYS5jb20="));
+	var url = encodeURIComponent(destinatario = atob("dmVudGFzQHNjYWRzZXIuY29tLm14"));
 	window.location.href = "mailto:" + url;
 }
 
