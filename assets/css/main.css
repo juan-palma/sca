@@ -1154,7 +1154,6 @@ main {
 	}
 
 
-	/*::: Elegirnos seccion :::*/
 	/*:::: elegirnos ::::*/
 	#elegirnos{
 		position: relative;
@@ -1430,6 +1429,203 @@ main {
 				article#sectores .box .col .titulo2 {
 					font-size: 210%;
 				}
+
+
+	/*::: Testimonios :::*/
+	#testimonios{
+		padding: 64px 0 32px;
+	}
+		#testimonios .capsula {
+			flex-wrap: wrap;
+		}
+			#testimonios .capsula > * {
+				position: relative;
+			}
+			#testimonios .capsula .foto {
+				padding: 8vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+				#testimonios .capsula .foto figure {
+					width: clamp(200px, 60vw, 420px);
+				}
+			#testimoniosSLD {
+				position: relative;
+				width: 100%;
+				height: auto;
+			}
+				#testContent {
+					width: 100%;
+					height: auto;
+				}
+					#testContent .sliderG {
+						height: auto;
+						background-color: transparent;
+					}
+						#testContent .sliderG .slidesWrapper{
+							height: auto;
+						}
+							#testContent .sliderG .slidesWrapper article.slide{
+								height: auto;
+								font-size: 84%;
+							}
+								#testContent .sliderG .slidesWrapper article.slide figure.slide__content {
+									height: auto;
+									color: var(--colorTexto);
+									position: relative;
+									top: auto;
+									transform: translate(-50%,0%);
+								}
+									#testContent .sliderG .slidesWrapper article.slide figure.slide__content figcaption {
+										height: fit-content;
+										padding: 64px 24px;
+									}
+										#testContent .sliderG .textoPSlide {
+											font-family: 'Montserrat';
+											font-weight: 400;
+											font-size: 86%;
+										}
+										#testContent .sliderG .testUser {
+											position: relative;
+											display: flex;
+											justify-content: center;
+											align-items: center;
+											grid-gap: 27px;
+											padding: 12px 6vw;
+										}
+										#testContent .sliderG .testUser > img {
+											width: 64px;
+										}
+										#testContent .sliderG .testUser > p {
+											display: flex;
+											flex-direction: column;
+											justify-content: flex-start;
+											align-items: flex-start;
+										}
+											#testContent .sliderG .testUser > p .nombre {
+												font-weight: 500;
+												color: var(--colorSecundario);
+											}
+						#testContent .sliderG .nav {
+							height: 34px;
+						}
+						.nav--prev{
+							left: -1rem;
+						}
+						.nav--next {
+							right: -1rem;
+						}
+						#testContent .sliderG .dots {
+							bottom: 1rem;
+						}
+	
+	/*:::: Contacto ::::*/
+	#contacto{
+		position: relative;
+	}
+		#contacto > .fondoBox {
+			position: absolute;
+			width: 100vw;
+			min-height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+			aspect-ratio: 650 / 303;
+		}
+			#contacto > .fondoBox > .fondo {
+				position: absolute;
+				min-width: 100vw;
+				height: 100%;
+				background: url('../img/fondo_agua.webp') center 0vw no-repeat;
+				background-size: cover;
+				aspect-ratio: 650 / 303;
+				mask-image: url('../img/mascara_ondas-doble-fondo.svg');
+				mask-mode: alpha;
+				mask-repeat: repeat-x;
+				mask-size: 199% 100%;
+				-webkit-mask-image: url('../img/mascara_ondas-doble-fondo.svg');
+				-webkit-mask-mode: alpha;
+				-webkit-mask-repeat: repeat-x;
+				-webkit-mask-size: 199% 100%;
+				mask-position: 0 0;
+				-webkit-mask-position: 0 0;
+				animation: slide-wave 34s linear infinite;
+			}
+
+			@keyframes slide-wave {
+				from {
+					mask-position:   0 0;
+					-webkit-mask-position: 0 0;
+				}
+				to {
+					mask-position:   -100% 0;
+					-webkit-mask-position: -100% 0;
+				}
+			}
+				#contacto > .fondoBox  > .fondo > figure{
+					visibility: hidden;
+					opacity: 0;
+					pointer-events: none;
+				}
+					#contacto > .fondoBox > .fondo > figure > picture > img{
+						width: auto;
+						height: 100%;
+						min-width: 100vw;
+					}
+					
+		#contacto > .boxWrap{
+			padding: 0px;
+		}
+			#contacto > .boxWrap > .capsula {
+				padding: calc(7vw + 7vh) 0;
+				transform: translateY(calc(3vw + 3vh));
+				grid-gap: 34px;
+			}
+				#contacto > .boxWrap > .capsula h3 {
+					font-size: 180%;
+					color: var(--colorTexto2);
+				}
+				#contacto > .boxWrap > .capsula .logoFooter {
+					width: 52px;
+				}
+				#contacto > .boxWrap > .capsula .boxCols {
+					position: relative;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: flex-end;
+					grid-gap: 34px;
+				}
+					#contacto > .boxWrap > .capsula .boxCols > * {
+						flex: 1 1 calc(33.33% - (34px *2));
+						display: flex;
+						flex-direction: column;
+						flex-wrap: wrap;
+						justify-content: flex-end;
+						align-items: center;
+						color: var(--colorTexto2);
+					}
+					#contacto > .boxWrap > .capsula .boxCols > .col1 {
+						align-items: flex-end;
+					}
+					#contacto > .boxWrap > .capsula .boxCols > .col2 {
+						text-align: center;
+						grid-gap: 24px;
+					}
+						#contacto > .boxWrap > .capsula .boxCols > .col2 h4 {
+							font-size: 130%;
+							color: var(--colorTexto2);
+						}
+					#contacto > .boxWrap > .capsula .boxCols > .col3 {
+						align-items: flex-start;
+					}
+						#contacto > .boxWrap > .capsula .boxCols > .col3 .contacto {
+							display: flex;
+							grid-gap: 12px;
+						}
+
 /*::::::: Estilos HOME FIN ::::::*/
 
 
@@ -1621,16 +1817,16 @@ button{
 /* ID.A libre - estilos para el footer de la empresa */
 .powered-by {
     width: 100%;
-    height: 74px;
+    height: 50px;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 16px 0px;
-	background-color: var(--colorIdaBlack);
+	background-color: #000;
     z-index: 9998;
-	display: none !important;
+	margin-top: -4px;
 }
 	.powered-by .capsula {
 		justify-content: center;
@@ -1640,6 +1836,7 @@ button{
 			flex-direction: column;
 			justify-content: flex-end;
 			align-items: center;
+			font-weight: 500;
 
 			-webkit-transition: all 0.3s cubic-bezier(0.265, 0.010, 0.005, 1.650);
 			-moz-transition: all 0.3s cubic-bezier(0.265, 0.010, 0.005, 1.650);
@@ -1648,7 +1845,7 @@ button{
 			transition: all 0.3s cubic-bezier(0.265, 0.010, 0.005, 1.650);
 		}
 		#idalibreFooter a:hover{
-			color: var(--colorIdaNaranja) !important;
+			color: var(--color3) !important;
 		}
 			#idalibreLogo {
 				position: absolute;
@@ -1664,6 +1861,24 @@ button{
 			#idalibreFooter a:hover #idalibreLogo{
 				transform: scale(1.2) translateY(-8px);
 			}
+
+
+		#idalibreFooter {
+			width: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			grid-gap: 68px;
+			color: var(--colorTexto2);
+			font-weight: 200;
+		}
+			#idalibreFooter > * {
+				display: flex;
+			}
+				#idalibreFooter > .powerbyinfo {
+					display: flex;
+					grid-gap: 0.4rem;
+				}
 
 
 
@@ -1869,6 +2084,25 @@ button{
 	article#sectores .box .col .titulo2 {
 		font-size: 162%;
 	}
+	#contacto > .boxWrap > .capsula .boxCols {
+		flex-direction: column;
+		align-items: center !important;
+		text-align: center !important;
+	}
+	#contacto > .boxWrap > .capsula .boxCols > .col3 {
+		align-items: center;
+	}
+	.powered-by {
+		height: auto;
+	}
+		#idalibreFooter {
+			flex-direction: column;
+			grid-gap: 24px;
+		}
+			#idalibreFooter > .powerbyinfo {
+				flex-direction: column;
+				align-items: center;
+			}
 }
 
 
@@ -1939,6 +2173,16 @@ button{
 			flex: 1 1 calc(50% - 28px);
 			max-width: 100%;
 		}
+
+	/*::: Testimonios :::*/
+	#testContent .sliderG .textoPSlide {
+		padding: 0;
+	}
+
+	/*:::: contacto :::*/
+	#contacto > .fondoBox > .fondo {
+		background-position-y: 0vw;
+	}
 
 	
 

@@ -201,22 +201,22 @@
 			<article class="boxSeccion" id="slider">
 				<div class="anchoFullFlex">
 					<div class="sliderG" id="heroSlider">
-					<!-- El JS inyectará aquí los <div class="slide"> … </div> -->
+						<!-- El JS inyectará aquí los <div class="slide"> … </div> -->
 
-					<!--Corte inverior para los slides-->
-					<picture class="slider-deco" aria-hidden="true">
-						<!-- Mobile first -->
-						<source srcset="./sliders/corte_slider_mobile.svg" media="(max-width: 767px)">
-						<!-- Desktop -->
-						<img src="./sliders/corte_slider_desktop.svg" alt="">
-					</picture>
+						<!--Corte inverior para los slides-->
+						<picture class="slider-deco" aria-hidden="true">
+							<!-- Mobile first -->
+							<source srcset="./sliders/corte_slider_mobile.svg" media="(max-width: 767px)">
+							<!-- Desktop -->
+							<img src="./sliders/corte_slider_desktop.svg" alt="">
+						</picture>
 
-					<!-- Controles laterales -->
-					<button class="nav nav--prev" aria-label="Anterior"><img src="./sliders/flecha_back.svg" alt="back"></button>
-					<button class="nav nav--next" aria-label="Siguiente"><img src="./sliders/flecha_next.svg" alt="next"></button>
+						<!-- Controles laterales -->
+						<button class="nav nav--prev" aria-label="Anterior"><img src="./sliders/flecha_back.svg" alt="back"></button>
+						<button class="nav nav--next" aria-label="Siguiente"><img src="./sliders/flecha_next.svg" alt="next"></button>
 
-					<!-- Bullets inferiores (se llenan por JS) -->
-					<ul class="dots" id="heroDots"></ul>
+						<!-- Bullets inferiores (se llenan por JS) -->
+						<ul class="dots" id="heroDots"></ul>
 					</div>
 				</div>
 			</article>
@@ -480,11 +480,11 @@
 						<h2 class="titulo">Nuestros sectores</h2>
 						<div class="box">
 							<div class="col col1">
-								<figure class="idaAniFade" data-direccion="izquierda" style="">
+								<figure class="idaAniFade" data-direccion="izquierda">
 									<picture>
 										<source media="(min-width: 460px)" preload-srcset="./assets/img/sca-consultoria-ambiental-sector-hidrocarburos-arsh.webp">
 										<!--<source preload-srcset="./assets/img/huella-400.webp">-->
-										<img preload-src="./assets/img/sca-consultoria-ambiental-sector-hidrocarburos-arsh.webp" alt="Huella de pie" width="120" height="120">
+										<img preload-src="./assets/img/sca-consultoria-ambiental-sector-hidrocarburos-arsh.webp" alt="planta" width="120" height="120">
 									</picture>
 								</figure>
 								<h3 class="titulo2">Sector hidrocarburos</h3>
@@ -493,11 +493,11 @@
 								</p>
 							</div>
 							<div class="col col2">
-								<figure class="idaAniFade" data-direccion="derecha" style="">
+								<figure class="idaAniFade" data-direccion="derecha">
 									<picture>
 										<source media="(min-width: 460px)" preload-srcset="./assets/img/./assets/img/sca-consultoria-ambiental-sector-hidrocarburos-arsh-industrial-privado.webp">
 										<!--<source preload-srcset="./assets/img/huella-400.webp">-->
-										<img preload-src="./assets/img/sca-consultoria-ambiental-sector-hidrocarburos-arsh-industrial-privado.webp" alt="Huella de pie" width="120" height="120">
+										<img preload-src="./assets/img/sca-consultoria-ambiental-sector-hidrocarburos-arsh-industrial-privado.webp" alt="personal" width="120" height="120">
 									</picture>
 								</figure>
 								<h3 class="titulo2">Sector industrial</h3>
@@ -514,502 +514,62 @@
 			<article class="boxSeccion" id="testimonios">
 				<div class="boxWrap">
 					<div class="capsula">
-						
+						<div class="foto">
+							<figure class="idaAniFade" data-direccion="abajo">
+								<picture>
+									<source media="(min-width: 460px)" preload-srcset="./assets/img/naturaleza-sca-consultoria-ambiental-ingeniera.webp">
+									<!--<source preload-srcset="./assets/img/huella-400.webp">-->
+									<img preload-src="./assets/img/naturaleza-sca-consultoria-ambiental-ingeniera.webp" alt="Naturaleza" width="120" height="120">
+								</picture>
+							</figure>
+						</div>
+						<div id="testimoniosSLD">
+							<div id="testContent">
+								<div class="sliderG" id="testiSlider">
+									<!-- El JS inyectará aquí los <div class="slide"> … </div> -->
+
+									<!-- Controles laterales -->
+									<button class="nav nav--prev" aria-label="Anterior"><img src="./sliders/flecha_back_black.svg" alt="back"></button>
+									<button class="nav nav--next" aria-label="Siguiente"><img src="./sliders/flecha_next_black.svg" alt="next"></button>
+
+									<!-- Bullets inferiores (se llenan por JS) -->
+									<ul class="dots" id="heroDots"></ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</article>
 
 
 			<article class="boxSeccion" id="contacto">
-				<div class="boxWrap">
-					<div class="capsula">
-						
-					</div>
-				</div>
-			</article>
-
-			<!--<article class="boxSeccion" id="caminoCorrecto">
-				<div class="boxWrap">
-					<div class="capsula">
-						<p class="textoT2">Estás en el lugar correcto para lograrlo</p>
-						<div id="cajaFuerte">
-							<figure>
-								<picture class="idaAniFade" data-direccion="abajo">
-									<source media="(min-width: 460px)" preload-srcset="./assets/img/cajafuerte.webp">
-									<source preload-srcset="./assets/img/cajafuerte-400.webp">
-									<img preload-src="./assets/img/cajafuerte-400.webp" alt="Caja Fuerte"  width="120" height="120">
-								</picture>
-							</figure>
-							<h2 class="textoT2">
-								La misión en <span class="bold">Ventomaquia</span> es sacar
-								todo el jugo a los medios digitales
-								para que <span class="colorS bold">tú vendas más.</span>
-							</h2>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="boxSeccion" id="vendeMas">
-				<div class="boxWrap">
-					<div class="capsula">
-						<div class="boxInfo">
-							<figure>
-								<picture>
-									<source preload-srcset="./assets/img/destello.svg">
-									<img preload-src="./assets/img/destello.svg" alt="Destello del logo Ventomaquia" width="40" height="40">
-								</picture>
-							</figure>
-							<h2>Venderás más<br>en sólo 4 semanas</h2>
-							<h3>En ese tiempo estarás recibiendo</h3>
-							<ul>
-								<li>+llamadas</li>
-								<li>+mensajes</li>
-								<li>+solicitudes de cotización</li>
-							</ul>
-							<p>
-								Ese es nuestro compromiso.
-							</p>
-							<a href="https://wa.me/+5213326248404" target="_blank" class="centro">
-								<div class="btnArrowGradient boton">
-									Agenda una llamada
-								</div>
-							</a>
-						</div>
-						<div class="boxImg idaAniFade" data-direccion="derecha">
-							<figure>
-								<picture>
-									<source media="(min-width: 460px)" preload-srcset="./assets/img/busto.webp">
-									<source preload-srcset="./assets/img/busto-400.webp">
-									<img preload-src="./assets/img/busto-400.webp" alt="Busto cool con lentes ventomaquia" width="120" height="120">
-								</picture>
-							</figure>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="boxSeccion" id="simple">
-				<div class="boxWrap">
-					<div class="capsula">
-						<div class="col1 idaAniFade">
-							<h2>
-								<span class="colorS">¿Así de<br>simple?</span><br>
-								Pues sí.
-							</h2>
-							<p>
-								Nuestras habilidades son el resultado de <span class="colorS">años de dedicación y pasión</span> por el diseño, la programación y el marketing.<br>
-							</p>
-							<p>
-								Si sumamos nuestras constantes capacitaciones, el resultado es una empresa que te resuelve.
-							</p>
-						</div>
-						<div class="col2 idaAniFade" data-direccion="derecha">
-							<div class="tarjeta">
-								<div class="valor">
-									+8
-									<span>años</span>
-								</div>
-								<p class="info">
-									Capacitándonos en marketing digital y aplicándolo a redes sociales.
-								</p>
-							</div>
-							<div class="tarjeta">
-								<div class="valor">
-									+12
-									<span>años</span>
-								</div>
-								<p class="info">
-									De experiencia en diseño gráfico, programación y marketing.
-								</p>
-							</div>
-							<div class="tarjeta">
-								<div class="valor">
-									+50
-									<span>marcas</span>
-								</div>
-								<p class="info">
-									Que quedaron satisfechas al dejar sus proyectos en nuestras manos.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="boxSeccion" id="marcas">
-				<div class="boxWrap">
-					<div class="capsula">
-						<div id="gMarcas">
-							<div class="marca">
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-invex.webp">
-										<img preload-src="./assets/img/marca-invex.webp" alt="Logo de la marca INVEX" width="60" height="60">
-									</picture>
-								</figure>
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-hbo.webp">
-										<img preload-src="./assets/img/marca-hbo.webp" alt="Logo de la marca HBO" width="60" height="60">
-									</picture>
-								</figure>
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-vips.webp">
-										<img preload-src="./assets/img/marca-vips.webp" alt="Logo de la marca VIPS" width="60" height="60">
-									</picture>
-								</figure>
-							</div>
-							<div class="marca">
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-volaris.webp">
-										<img preload-src="./assets/img/marca-volaris.webp" alt="Logo de la marca VOLARIS" width="60" height="60">
-									</picture>
-								</figure>
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-axtel.webp">
-										<img preload-src="./assets/img/marca-axtel.webp" alt="Logo de la marca VOLARIS" width="60" height="60">
-									</picture>
-								</figure>
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-cablemas.webp">
-										<img preload-src="./assets/img/marca-cablemas.webp" alt="Logo de la marca VOLARIS" width="60" height="60">
-									</picture>
-								</figure>
-							</div>
-							<div class="marca">
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-ciao.webp">
-										<img preload-src="./assets/img/marca-ciao.webp" alt="Logo de la marca VOLARIS" width="60" height="60">
-									</picture>
-								</figure>
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-interjet.webp">
-										<img preload-src="./assets/img/marca-interjet.webp" alt="Logo de la marca VOLARIS" width="60" height="60">
-									</picture>
-								</figure>
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-jumex.webp">
-										<img preload-src="./assets/img/marca-jumex.webp" alt="Logo de la marca VOLARIS" width="60" height="60">
-									</picture>
-								</figure>
-							</div>
-							<div class="marca">
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-oxxo.webp">
-										<img preload-src="./assets/img/marca-oxxo.webp" alt="Logo de la marca VOLARIS" width="60" height="60">
-									</picture>
-								</figure>
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-posadas.webp">
-										<img preload-src="./assets/img/marca-posadas.webp" alt="Logo de la marca VOLARIS" width="60" height="60">
-									</picture>
-								</figure>
-								<figure>
-									<picture>
-										<source preload-srcset="./assets/img/marca-raices.webp">
-										<img preload-src="./assets/img/marca-raices.webp" alt="Logo de la marca VOLARIS" width="60" height="60">
-									</picture>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="boxSeccion" id="servicios">
-				<div class="boxWrap">
-					<div class="capsula">
-						<h2>
-							Estos son los servicios con los que <span class="colorS">llevaremos tu negocio al siguiente nivel</span>
-						</h2>
-						<div class="reticula">
-							<div class="tarjeta idaAniFade" data-direccion="arriba">
-								<div class="fondo">
-									<figure>
-										<picture>
-											<source media="(min-width: 460px)" preload-srcset="./assets/img/celular.webp">
-											<source preload-srcset="./assets/img/celular-400.webp">
-											<img preload-src="./assets/img/celular-400.webp" alt="fondo de celular" width="120" height="120">
-										</picture>
-									</figure>
-								</div>
-								<div class="box">
-									<h3>
-										Administración
-										de Redes Sociales
-									</h3>
-									<ul>
-										<li>Para presencia de marca.</li>
-										<li>Para explotarlas como canal de ventas.</li>
-										<li>Ó nuestro favorito: para ambas cosas.</li>
-									</ul>
-									<div class="boxBoton">
-										<a href="./servicios/redes-sociales.html"><button class="circuloChico">+</button></a>
-									</div>
-								</div>
-							</div>
-							<div class="tarjeta idaAniFade" data-direccion="abajo">
-								<div class="box">
-									<h4>
-										Diseñados exclusivamente para tu negocio.
-									</h4>
-									<p>
-										Cada servicio se realiza bajo una estrategia creada específicamente para tus necesidades.
-									</p>
-								</div>
-							</div>
-							<div class="tarjeta idaAniFade" data-direccion="derecha">
-								<div class="fondo">
-									<figure>
-										<picture>
-											<source media="(min-width: 460px)" preload-srcset="./assets/img/cpu.webp">
-											<source preload-srcset="./assets/img/cpu-400.webp">
-											<img preload-src="./assets/img/cpu-400.webp" alt="fondo de CPU" width="120" height="120">
-										</picture>
-									</figure>
-								</div>
-								<div class="box">
-									<h3>
-										Creación de Sitios Web
-									</h3>
-									<p>
-										¡Tu sitio web en 48 hrs!<br>
-										Además, a un increíble precio.Consulta nuestros paquetes, seguramente hay uno para ti.
-									</p>
-									<div class="boxBoton">
-										<a href="./servicios/sitios-web.html"><button class="circuloChico">+</button></a>
-									</div>
-								</div>
-							</div>
-							<div class="tarjeta idaAniFade" data-direccion="derecha">
-								<div class="box">
-									<h4>
-										Contamos con una increíble habilidad.
-									</h4>
-									<p>
-										Encontrar el potencial de cada negocio y usarlo para lograr sus objetivos.
-									</p>
-								</div>
-							</div>
-							<div class="tarjeta idaAniFade" data-direccion="abajo">
-								<div class="fondo">
-									<figure>
-										<picture>
-											<source media="(min-width: 460px)" preload-srcset="./assets/img/megafono.webp">
-											<source preload-srcset="./assets/img/megafono-400.webp">
-											<img preload-src="./assets/img/megafono-400.webp" alt="fondo de Megafono" width="120" height="120">
-										</picture>
-									</figure>
-								</div>
-								<div class="box">
-									<h3>
-										Desarrollo
-										de Branding
-									</h3>
-									<p>
-										Creamos marcas que se destacan de entre la multitud. Nombre, logotipo, identidad... lo hacemos todo y lo hacemos bien.
-									</p>
-									<div class="boxBoton">
-										<a href="./servicios/branding.html"><button class="circuloChico">+</button></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="boxSeccion" id="dudas">
-				<div class="boxWrap">
-					<div class="capsula">
-						<div class="col">
-							<p>
-								¿Tienes preguntas?
-							</p>
-							<p class="icono">
-								🤔
-							</p>
-							<a href="./dudas-frecuentes.html"><button class="dudasBTN">Revisa aquí si alguien tuvo las mismas dudas</button></a>
-						</div>
-						<div class="col">
-							<p>
-								Quieres saber más sobre nosotros.
-							</p>
-							<p class="icono">
-								😎
-							</p>
-							<a href="https://wa.me/+5213326248404" target="_blank" rel="nofollow" title="Iniciar charla por WhatsApp"><button class="dudasBTN">Mándanos un mensaje y acordemos una cita.</button></a>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="boxSeccion" id="gastaMenos">
-				<div class="boxWrap">
-					<div class="capsula">
-						<h2>
-							Además de <span class="colorS">ganar más</span>, también hacemos que <span class="colorS">gastes menos</span>
-						</h2>
-						<div class="boxG">
-							<div class="resplandor"></div>
-							<div class="boxTarjetas idaAniFade idaAniFadeGrupo" data-direccion="abajo" data-grupo="numero">
-								<div class="tarjeta">
-									<div class="numero">1</div>
-									<p>
-										<span class="colorS">Cubrimos casi en su totalidad un área de ventas,</span> por una fracción del costo.
-									</p>
-								</div>
-								<div class="tarjeta">
-									<div class="numero">2</div>
-									<p>
-										Localizar clientes potenciales es más rápido<span class="colorS">Más rápido significa <span class="bold">menos gasto.</span>
-									</p>
-								</div>
-								<div class="tarjeta">
-									<div class="numero">3</div>
-									<p>
-										La inversión publicitaria es mínima, por lo que <span class="colorS">el retorno de inversíon es casi inmediato.</span>
-									</p>
-								</div>
-								<div class="tarjeta">
-									<div class="numero">4</div>
-									<p>
-										Olvídate de lidiar con un equipo de ventas. <span class="colorS">Sólo <span class="bold">Ventomaquia</span></span> te rendirá cuentas y punto.
-									</p>
-								</div>
-							</div>
-						</div>
-						<p class="textoT2">
-							Con lo que ahorras, nuestros servicios
-							prácticamente se pagan solos.
-						</p>
-					</div>
-				</div>
-			</article>
-
-			<article class="boxSeccion" id="carta">
-				<div class="boxWrap">
-					<div class="capsula">
-						<h2 class="colorP">
-							Si aún dudas,
-							<span class="colorS">jugaremos nuestra última carta</span> para convencerte.
-						</h2>
-						<div class="boxG cardAniG">
-							<div class="cardCapsul">
-								<div class="cardAni">
-									<div class="tarjeta">
-										<figure>
-											<picture>
-												<source media="(min-width: 460px)" preload-srcset="./assets/img/carta-vuelta.webp">
-												<source preload-srcset="./assets/img/carta-vuelta-400.webp">
-												<img preload-src="./assets/img/carta-vuelta-400.webp" alt="Tarjeta de baraja Vuelta" width="120" height="120">
-											</picture>
-										</figure>
-									</div>
-									<div class="tarjeta">
-										<figure>
-											<picture>
-												<source media="(min-width: 460px)" preload-srcset="./assets/img/carta-frente.webp">
-												<source preload-srcset="./assets/img/carta-frente-400.webp">
-												<img preload-src="./assets/img/carta-frente-400.webp" alt="Tarjeta de baraja Vuelta" width="120" height="120">
-											</picture>
-											<figcaption>
-												<p>
-													Tú decides no usar las herramientas digitales. Pero…
-												</p>
-												<p>
-													¿Si tu competencia lo hace?
-												</p>
-												<p>
-													¿Cederás todas esas ventas?
-												</p>
-											</figcaption>
-										</figure>
-										
-										<div class="iconos">
-											<p>🤯😱🤯</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="boxSeccion" id="despegar">
-				<div class="boxWrap">
-					<div class="capsula">
-						<div class="col1">
-							<figure>
-								<picture>
-									<source media="(min-width: 460px)" preload-srcset="./assets/img/globo.webp">
-									<source preload-srcset="./assets/img/globo-400.webp">
-									<img preload-src="./assets/img/globo-400.webp" alt="Globo cepeling" width="120" height="120">
-								</picture>
-							</figure>
-						</div>
-						<div class="col2 idaAniFade idaAniFadeGrupo" data-grupo="ani" data-direccion="derecha">
-							<h2 class="ani">
-								<span class="colorS">¡Prepárate para despegar!</span><br>
-								Recuerda que el que no se actualiza se queda atrás.
-							</h2>
-						</div>
-					</div>
-				</div>
-			</article>
-		</div>
-		</main>
-		<footer>
-			<div class="boxSeccion">
-				<div class="boxWrap">
+				<div class="fondoBox">
 					<div class="fondo">
-						<figure>
-							<picture>
-								<source media="(min-width: 460px)" preload-srcset="./assets/img/cerebro.webp">
-								<source preload-srcset="./assets/img/cerebro-400.webp">
-								<img preload-src="./assets/img/cerebro-400.webp" alt="Globo cepeling" width="120" height="120">
-							</picture>
-						</figure>
+						<!--<div>
+								<img preload-src="./assets/img/mascara_ondas.svg" alt="Fondo de Ventomaquia" width="120">
+						</div>-->
 					</div>
+				</div>
+				<div class="boxWrap">
 					<div class="capsula">
-						<div class="boxG">
-							<div class="col">
-								<div class="titulo">MENÚ</div>
-								<ul>
-									<li class="activo"><a href="./" class="prevenir">Inicio</a></li>
-									<li><a href="./la-ventomaquia.html">La Ventomaquia</a></li>
-									<li><a href="./dudas-frecuentes.html">Dudas Frecuentes</a></li>
-									<li>
-										<a class="" href="./">
-											Sección donde está
-											esa increíble máscara
-											samurai con lentes
-										</a>
-									</li>
-								</ul>
+						<h3>La solución  que esperas<br>comienza con un mensaje</h3>
+						<div class="logoFooter">
+							<figure class="">
+								<picture>
+									<source media="(min-width: 460px)" preload-srcset="./assets/img/logo-minimal.svg">
+									<!--<source preload-srcset="./assets/img/huella-400.webp">-->
+									<img preload-src="./assets/img/logo-minimal.svg" alt="Logo SCA" width="120" height="120">
+								</picture>
+							</figure>
+						</div>
+						<div class="boxCols">
+							<div class="col col1">
+								<div class="globo globoAzul btn-whatsapp" data-url="https://wa.me/+5215548400059">
+									Solicita una Auditoria de <br />Cumplimiento Legal <span class="bold">SIN COSTO</span>
+								</div>
 							</div>
-							<div class="col">
-								<div class="titulo">SERVICIOS</div>
-								<ul>
-									<li><a href="./servicios/sitios-web.html">Sitios Web</a></li>
-									<li><a href="./servicios/e-commerce.html">E-commerce</a></li>
-									<li><a href="./servicios/redes-sociales.html">Redes Sociales</a></li>
-									<li><a href="./servicios/branding.html">Branding</a></li>
-									<li><a href="./servicios/fotografia.html">Fotografía</a></li>
-								</ul>
-							</div>
-							<div class="col" id="contacto">
+							<div class="col col2">
+								<h4>Encuéntranos</h4>
 								<div class="redes">
 									<div class="redesMain">
 										<a href="https://www.facebook.com/ventomaquia" target="_blank" rel="nofollow" title="Ir al Facebook">
@@ -1034,60 +594,32 @@
 											</div>
 										</a>
 									</div>
-									
-								</div>
-								<div class="contacto">
-									<div class="titulo">Teléfono:</div>
-									<div class="info"><a href="tel:+5213326248404" target="_blank" rel="nofollow" title="Iniciar Llamada">33.2624.8404</a></div>
-								</div>
-								<div class="contacto">
-									<div class="titulo">Correo:</div>
-									<div class="info"><a href="./"  rel="nofollow" title="Enviar un correo" onclick="openMailer(event);"><span>ho<!-- Comment-ida ->la&#64;vent<!-- comment-ida ->omaquia&#46;com</span></a></div>
 								</div>
 							</div>
-							<div class="col">
-								<div class="logo">
-									<figure>
-										<picture>
-											<source preload-srcset="./assets/img/footer-logo-ventomaquia.svg">
-											<img preload-src="./assets/img/footer-logo-ventomaquia.svg" alt="Logo Ventomaquia Footer" width="120" height="120">
-										</picture>
-									</figure>
-									<div>
-										Digital Media<br>
-										Marketing
-									</div>
+							<div class="col col3">
+								<div class="contacto">
+									<div class="titulo">Tel:</div>
+									<div class="info"><a href="tel:+5215548400059" target="_blank" rel="nofollow" title="Iniciar Llamada">55.4840.0059</a></div>
 								</div>
-								<p>
-									Sitio desarrollado
-									por Ventomaquia
-									con mucho ❤️
-								</p>
+								<div class="contacto">
+									<!--<div class="titulo"></div>-->
+									<div class="info"><a href="./"  rel="nofollow" title="Enviar un correo" onclick="openMailer(event);"><span>ve<!-- Comment-ida -->ntas&#64;sca<!-- comment-ida -->dser&#46;com&#46;mx</span></a></div>
+								</div>
 							</div>
-						</div>
-						<div class="legales">
-							<a href="./politicas-privacidad.html" target="_blank" rel="noopener noreferrer">Política de privacidad</a>
 						</div>
 					</div>
 				</div>
-			</div>
--->
+			</article>
+
 
 			<!-- informacion de ID.A libre, la empresa desarrolladora de este sitio web -->
 			<div class="powered-by">
 				<div class="capsula">
 					<div id="idalibreFooter">
-						<a href="https://idalibre.com" rel="sponsored" target="_blank" title="ID.A libre - Sitio WEB">
-							<figure id="idalibreLogo">
-								<picture>
-									<source preload-srcset="./assets/img/idalibre-logo-stiker.svg" type="image/svg+xml">
-									<source preload-srcset="./assets/img/idalibre-logo-stiker.webp" type="image/webp">
-									<source preload-srcset="./assets/img/idalibre-logo-stiker.png" type="image/png">
-									<img preload-src="./assets/img/idalibre-logo-stiker.png" alt="Logotipo ID.A libre" width="120" height="120">
-								</picture>
-							</figure>
-							<p>Powered by</p>
-						</a>
+						<div class="powerbyinfo">
+							Sitio desarrollado por <a href="https://ventomaquia.com/" target="_blank">Ventomaquia</a> con mucho ♥️
+						</div>
+						<div class="politicas"><a href="">Política de privacidad</a></div>
 					</div>
 				</div>
 			</div>

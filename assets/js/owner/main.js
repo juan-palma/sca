@@ -266,7 +266,7 @@ async function iniciar() {
 		gsap[efecto](objeto, {
 			scrollTrigger:{
 				trigger:objeto,
-				start: "10% 85%",
+				start: "10% 68%",
 				end: "center bottom",
 				toggleActions:"restart none reverse none",
 				invalidateOnRefresh: true,
@@ -371,6 +371,31 @@ const slidesData = [
 	{img: './sliders/slide1.webp', title: '', text: '<div class="textoPSlide">Estamos contigo desde el inicio <br />y durante todo el proceso</div>', "id":"", "class":"slideSCA", delay:10000},
 	{img: './sliders/slide2.webp', title: '',  text: '<div class="textoPSlide"><span class="blanco">¿NO SABES<br>POR DÓNDE<br>COMENZAR?</span><br><span class="colorP">Comienza</span><br><span class="blanco"><span class="menos">CON</span><br>NOSOTROS</span></div>', "id":"", "class":"gasolineraText"},
 	{img: './sliders/slide3.webp', title: '',  text: '<div class="textoPSlide"><span class="azul">Cumplir es</span><br><span class="blanco">muy fácil</span><br><span class="azul">con el equipo</span><br><span class="blanco">correcto</span><div class="globo globoAzul btn-whatsapp" data-url="https://wa.me/+5215548400059"">Solicita una Auditoria de Cumplimiento Legal <span class="bold">SIN COSTO</span></div></div>', "id":"", "class":"manoAguaSlide"}
+];
+
+const testiDataSlide = [
+	{
+		img:'',
+		title:'',
+		text:'<div class="textoPSlide">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>',
+		foto:"./assets/img/testimonios/foto_testimonio_1.webp",
+		nombre:"Nombre de la persona",
+		puesto:"Empresa o puesto",
+		"id":"",
+		"class":"slideSCA",
+		delay:8000
+	},
+	{
+		img:'',
+		title:'',
+		text:'<div class="textoPSlide">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>',
+		foto:"./assets/img/testimonios/foto_testimonio_1.webp",
+		nombre:"Nombre de la persona",
+		puesto:"Empresa o puesto",
+		"id":"",
+		"class":"slideSCA",
+		delay:8000
+	}
 ];
 
 
@@ -712,7 +737,7 @@ async function cargaPrimaria(){
 		//await Promise.all([pantalla1Ani(), toolsPimeraCarga()]);
 		//await pantallasShow();
 		sliderDefaultDelay = 8000;   // 5 s default
-		let [v1, v2] = await Promise.all([toolsPimeraCarga(), createHeroSlider('#heroSlider', slidesData)]);
+		let [v1, v2] = await Promise.all([toolsPimeraCarga(), createHeroSlider('#heroSlider', slidesData), createHeroSlider('#testiSlider', testiDataSlide)]);
 	} catch (error) {
 		console.error('Error ejecutando cargaPrimaria:', error);
 	}
